@@ -7,6 +7,9 @@ import org.codehaus.jackson.map.ObjectMapper;
 import org.codehaus.jettison.json.JSONArray;
 import org.codehaus.jettison.json.JSONException;
 import org.codehaus.jettison.json.JSONObject;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.slf4j.Marker;
 
 import javax.ws.rs.container.ContainerRequestContext;
 import javax.ws.rs.container.ContainerResponseContext;
@@ -20,6 +23,8 @@ import java.util.List;
  * Created by kvillaca on 9/16/2015.
  */
 public class ValidateToken {
+
+    final Logger LOG = LoggerFactory.getLogger(this.getClass());
 
     private static final String LOGIN = "validate/";
     private static final String POC_REST_SERVLET = "/rest/";
@@ -50,9 +55,10 @@ public class ValidateToken {
         // For the initial menu when not logged.
         if (uri.contains(POC_REST_SERVLET)) {
             final String headerVal = containerRequest.getHeaderString(TokenDetailsKeys.HEADER.toString().toLowerCase());
-            if (headerVal != null && headerVal.trim().length() > 0)
+            if (headerVal != null && headerVal.trim().length() > 0) {
                 parseHeader(headerVal);
-
+                LOG.info("User: " + localUser + ", role(s): " + rolesStr + ", uri accessed: " + uri);
+            }
             boolean hasToken = (token != null && token.length() > 0) ? true : false;
             boolean hasRsServlet = (uri != null && uri.contains(POC_REST_SERVLET)) ? true : false;
             boolean isLogin = (uri != null && uri.contains(POC_REST_SERVLET) && uri.contains(LOGIN)) ? true : false;
