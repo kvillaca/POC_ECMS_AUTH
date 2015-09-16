@@ -1,0 +1,18 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="POC_ECMS_IDEAS">
+    <output-path>$PROJECT_DIR$/out/artifacts/POC_ECMS_IDEAS</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="POC_ECMS_IDEAS" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="spymemcached-2.10.3" />
+          <element id="library" level="project" name="Sl4j" />
+          <element id="library" level="project" name="Junit-4.8.2" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="POC_ECMS_IDEAS/web/Web" />
+    </root>
+  </artifact>
+</component>
