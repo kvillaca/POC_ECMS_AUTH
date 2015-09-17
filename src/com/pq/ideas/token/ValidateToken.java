@@ -116,6 +116,12 @@ public class ValidateToken {
      * @throws Exception
      */
     public ContainerResponseContext validateTokenResponse(final ContainerResponseContext containerResponse, final String uri, final String header) throws Exception {
+        containerResponse.getHeaders().add("Access-Control-Allow-Origin", "*");
+        containerResponse.getHeaders().add("Access-Control-Allow-Headers", "origin, content-type, accept, authorization,X-ECMS-Session");
+        containerResponse.getHeaders().add("Access-Control-Allow-Credentials", "true");
+        containerResponse.getHeaders().add("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS, HEAD");
+        containerResponse.getHeaders().add("Access-Control-Max-Age", "1209600");
+
         try {
             JSONObject headerAsJson = new JSONObject(header);
             final JSONArray headerValuesAsJson = headerAsJson.getJSONArray(TokenDetailsKeys.HEADER_VALUES.toString());

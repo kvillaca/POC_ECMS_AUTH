@@ -44,11 +44,6 @@ public class ProQuestSecurityFilter implements ContainerRequestFilter, Container
 	@Override
 	public void filter(ContainerRequestContext containerRequest, ContainerResponseContext containerResponse) throws IOException {
 
-		containerResponse.getHeaders().add("Access-Control-Allow-Origin", "*");
-		containerResponse.getHeaders().add("Access-Control-Allow-Headers", "origin, content-type, accept, authorization,X-ECMS-Session");
-		containerResponse.getHeaders().add("Access-Control-Allow-Credentials", "true");
-		containerResponse.getHeaders().add("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS, HEAD");
-		containerResponse.getHeaders().add("Access-Control-Max-Age", "1209600");
 
 		// Get the URI called
 		uri = containerRequest.getUriInfo().getAbsolutePath().toString();

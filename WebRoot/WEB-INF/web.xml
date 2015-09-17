@@ -16,7 +16,7 @@
    -->
    
    <!-- Cache Initializer -->
-	<listener>
-		<listener-class>com.pq.ideas.rs.servletListeners.CacheListener</listener-class>
-	</listener>
+	<!--<listener>-->
+		<!--<listener-class>com.pq.ideas.rs.servletListeners.CacheListener</listener-class>-->
+	<!--</listener>-->
 </web-app>

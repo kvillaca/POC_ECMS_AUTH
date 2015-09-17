@@ -24,9 +24,9 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="spymemcached-2.10.3" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="TomcatWithLibs" level="project" />
     <orderEntry type="library" name="Sl4j" level="project" />
     <orderEntry type="library" name="Junit-4.8.2" level="project" />
+    <orderEntry type="library" name="spymemcached-2.10.31" level="project" />
   </component>
 </module>

@@ -7,9 +7,9 @@
           <element id="module-output" name="POC_ECMS_IDEAS" />
         </element>
         <element id="directory" name="lib">
-          <element id="library" level="project" name="spymemcached-2.10.3" />
           <element id="library" level="project" name="Sl4j" />
           <element id="library" level="project" name="Junit-4.8.2" />
+          <element id="library" level="project" name="spymemcached-2.10.31" />
         </element>
       </element>
       <element id="javaee-facet-resources" facet="POC_ECMS_IDEAS/web/Web" />
