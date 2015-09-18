@@ -28,5 +28,6 @@
     <orderEntry type="library" name="Sl4j" level="project" />
     <orderEntry type="library" name="Junit-4.8.2" level="project" />
     <orderEntry type="library" name="spymemcached-2.10.31" level="project" />
+    <orderEntry type="library" name="POC_AUTH_JAR" level="project" />
   </component>
 </module>

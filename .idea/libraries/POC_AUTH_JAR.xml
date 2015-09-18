@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="POC_AUTH_JAR">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/POC_AUTH_JAR.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,4 +1,0 @@
-The reasons behind wide use of enums is to avoid those long constant files, that load a lot of static instance variables in memory.
-Make the type safe when passing parameters to methods or constructors.
-Have a more efficient way to use memory as the enum just load in memory the enum invoked.
-Keep the code tide and clean with well defined enums classes.
