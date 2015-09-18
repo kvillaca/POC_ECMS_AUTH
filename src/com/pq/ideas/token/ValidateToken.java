@@ -53,7 +53,6 @@ public class ValidateToken {
         uri = containerRequest.getUriInfo().getAbsolutePath().toString();
 
         // For the initial menu when not logged.
-        if (uri.contains(POC_REST_SERVLET)) {
             final String headerVal = containerRequest.getHeaderString(TokenDetailsKeys.HEADER.toString().toLowerCase());
             if (headerVal != null && headerVal.trim().length() > 0) {
                 parseHeader(headerVal);
@@ -98,7 +97,6 @@ public class ValidateToken {
                     }
                 }
             }
-        }
 
         return containerRequest;
     }

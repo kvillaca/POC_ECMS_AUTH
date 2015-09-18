@@ -34,6 +34,8 @@ import com.pq.ideas.utils.PropertyReader;
 @PreMatching
 public class ProQuestSecurityFilter implements ContainerRequestFilter, ContainerResponseFilter {
 
+	private static final String POC_REST_SERVLET = "/rest/";
+
 	private String header;
 	private String uri;
 
@@ -54,7 +56,9 @@ public class ProQuestSecurityFilter implements ContainerRequestFilter, Container
 		if (header != null) {
 			final ValidateToken validateToken = new ValidateToken();
 			try {
-				containerResponse = validateToken.validateTokenResponse(containerResponse, uri, header);
+				if (uri.contains(POC_REST_SERVLET)) {
+					containerResponse = validateToken.validateTokenResponse(containerResponse, uri, header);
+				}
 			} catch (Exception e) {
 				containerResponse.setStatus(Status.INTERNAL_SERVER_ERROR.getStatusCode());
 			}

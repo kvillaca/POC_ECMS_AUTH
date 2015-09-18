@@ -19,7 +19,7 @@ import java.util.logging.Logger;
  * @author kvillaca
  *
  */
-@ApplicationPath("/ecms/rest/")
+@ApplicationPath("/rest/auth/")
 public class Application extends ResourceConfig {
 
 
