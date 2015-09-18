@@ -23,6 +23,7 @@ import java.util.logging.Logger;
 public class Application extends ResourceConfig {
 
 
+
 	@SuppressWarnings("unchecked")
 	public Application() {
 		packages("com.pq.ideas.rs.endpoints.v1", "com.pq.ideas.rs.filters");

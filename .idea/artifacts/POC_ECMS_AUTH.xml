@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
-  <artifact type="exploded-war" name="POC_ECMS_IDEAS">
-    <output-path>$PROJECT_DIR$/out/artifacts/POC_ECMS_IDEAS</output-path>
+  <artifact type="exploded-war" name="POC_ECMS_AUTH">
+    <output-path>$PROJECT_DIR$/out/artifacts/POC_ECMS_AUTH</output-path>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">

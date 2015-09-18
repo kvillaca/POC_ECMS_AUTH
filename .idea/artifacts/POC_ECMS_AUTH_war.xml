@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="POC_ECMS_AUTH_war">
+    <output-path>$PROJECT_DIR$/out/artifacts/POC_ECMS_AUTH_war</output-path>
+    <root id="archive" name="POC_ECMS_AUTH_war.war">
+      <element id="artifact" artifact-name="POC_ECMS_AUTH" />
+    </root>
+  </artifact>
+</component>
